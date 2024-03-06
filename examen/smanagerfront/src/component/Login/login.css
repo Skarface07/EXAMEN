@@ -1,0 +1,119 @@
+/* Réinitialisation de base pour */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .login-container::before{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(back.png);
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+    
+  }
+  
+  .login-container {
+    width: 350px; /* Vous pouvez ajuster la largeur en fonction de vos besoins */
+    padding: 20px;
+    border-radius: 8px;
+    background: transparent; /* Fond semi-transparent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+  }
+  
+  /* Titre */
+  .login-container h1 {
+    margin-bottom: 20px;
+    color: #d32f2f; /* Couleur du titre */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styles des icônes et des textes en dessous */
+  .iconCate {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  
+  .iconCate li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Ajustez la taille en fonction de vos besoins */
+    height: 60px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .icon-circle:hover, .icon-circle:focus {
+    background: #d32f2f; /* Couleur de fond lors du survol */
+  }
+  
+  /* Styles pour les textes sous les icônes */
+  .iconCate span {
+    color: #333; /* Couleur du texte */
+    font-size: 0.85rem; /* Taille du texte */
+  }
+  
+  /* Styles des champs de formulaire */
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Lien pour récupérer le mot de passe */
+  a[href="/recover-password"] {
+    display: block;
+    color: #d32f2f;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  /* Bouton de connexion */
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #d32f2f;
+    color: white;
+    cursor: pointer;
+    margin-right: 10%;
+  }
+  
+  button:hover {
+    background-color: #a00000; /* Assombrir la couleur du bouton au survol */
+  }
+  

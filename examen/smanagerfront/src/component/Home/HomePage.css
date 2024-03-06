@@ -1,0 +1,49 @@
+.home-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .home-header h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .home-content p {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .home-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .home-actions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-actions button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .home-actions {
+      flex-direction: column;
+    }
+  
+    .home-actions button {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
